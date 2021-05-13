@@ -1,0 +1,55 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 12, 2021 at 03:11 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `hospital`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employee`
+--
+
+CREATE TABLE `employee` (
+  `staffid` varchar(30) NOT NULL,
+  `fname` varchar(255) NOT NULL,
+  `lname` varchar(255) NOT NULL,
+  `dob` date NOT NULL,
+  `gender` varchar(20) NOT NULL,
+  `mobileno` bigint(15) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `dept` varchar(200) NOT NULL,
+  `experience` varchar(10) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `photo` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`staffid`, `fname`, `lname`, `dob`, `gender`, `mobileno`, `email`, `dept`, `experience`, `address`, `photo`) VALUES
+('001', 'Aaliya', 'S Khan', '1998-05-15', 'on', 9605807726, 'aaliya3@gmail.com', 'Pharmacy', '12', 'vrindavanam, elampa.po, avanavanchery, attingal', 0x70686f746f2f416c69612e6a7067),
+('002', 'Varun', 'S Khan', '2021-04-29', 'on', 9874563456, 'sooraj@gmail.com', 'Pediactrician', '10', 'sunu vihar, pulimaath, koduvazhanoor p.o, Koduvazhannoor', 0x70686f746f2f566172756e2e6a7067);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

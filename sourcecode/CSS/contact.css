@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#body{
+    width: 100%;
+    height: 610px;
+    background-color: blanchedalmond;
+}
+#details{
+    width: 50%;
+    height: 510px;
+    /* background-color: aqua; */
+    float: left;
+}
+#mapdetails{
+    width: 50%;
+    height: 510px;
+    /* background-color: brown; */
+    float: left;
+}
+#contact{
+    padding-left: 20%;
+    padding-top: 200px;
+}
+#address{
+    padding-left: 30%;
+    text-align: center;
+}
+iframe{
+    padding-top: 10%;
+}
